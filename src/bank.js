@@ -37,6 +37,14 @@ Bank.prototype = {
 		this.getAccount(accountId).updateBalance(ammount);
 	},
 
+	withdraw: function(accountId, ammount) {
+		try {
+			this.getAccount(accountId).updateBalance(ammount);
+		} catch(err) {
+			throw err;
+		}
+	},
+
 	checkBalance: function(accountId) {
 		return this.getAccount(accountId).getBalance();
 	},

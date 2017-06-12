@@ -12,7 +12,11 @@ Account.prototype = {
 	},
 
 	updateBalance: function(ammount) {
-		this.balance += ammount;
+		if (ammount < -this.getBalance()){
+			throw new Error('Not enough money in account');
+		} else {
+			this.balance += ammount;
+		}
 	}
 
 }
