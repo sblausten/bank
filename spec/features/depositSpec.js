@@ -1,13 +1,15 @@
+var Bank = require('../../src/bank');
 
 describe('deposit money', function() {
-	var account;
+	var bank;
 
 	beforeEach( function(){
-		account = Account.new;
-	})
+		bank = new Bank;
+		bank.createAccount();
+	});
 
 	it('client can make a deposit to their own account', function(){
-		account.deposit(1, 500);
-		expect(balance(1)).toEqual(500);
-	})
-})
+		bank.deposit(0, 500);
+		expect(bank.checkBalance(0)).toEqual(500);
+	});
+});
