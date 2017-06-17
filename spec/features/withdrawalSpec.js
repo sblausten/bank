@@ -4,9 +4,9 @@ describe('withdraw money', function() {
 	var bank;
 
 	beforeEach( function(){
-		bank = new Bank;
+		bank = new Bank();
 		bank.createAccount();
-		bank.deposit(0, 501)
+		bank.deposit(0, 501);
 	});
 
 	it('client can withdraw money from their own account', function(){

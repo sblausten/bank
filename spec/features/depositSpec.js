@@ -4,7 +4,7 @@ describe('deposit money', function() {
 	var bank;
 
 	beforeEach( function(){
-		bank = new Bank;
+		bank = new Bank();
 		bank.createAccount();
 	});
 

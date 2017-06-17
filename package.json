@@ -4,7 +4,7 @@
   "description": "basic bank",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine-node spec"
+    "test": "jasmine-node spec --forceexit"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/sblausten/bank#readme",
   "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jasmine": "^1.1.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-jasmine-node": "^0.3.1",
     "jasmine": "^2.6.0",
     "jasmine-node": "^1.14.5"
   }

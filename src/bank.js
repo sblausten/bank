@@ -1,5 +1,7 @@
 'use strict';
 var Account = require('./account');
+var print = require('./printStatement');
+var printer;
 
 function Bank() {
     this._accounts = [];
@@ -47,6 +49,10 @@ Bank.prototype = {
 
 	checkBalance: function(accountId) {
 		return this.getAccount(accountId).getBalance();
+	},
+
+	printStatement: function(accountId) {
+		print(this.getAccount(accountId));
 	},
 
 	getAccount: function(accountId) {

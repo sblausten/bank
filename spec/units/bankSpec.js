@@ -4,10 +4,10 @@ describe('bank', function() {
 
     describe('createAccount', function() {
         var bank;
-        var accountStub
+        var accountStub;
 
         beforeEach(function() {
-            bank = new Bank;
+            bank = new Bank();
             accountStub = jasmine.createSpy('Account');
             Account({});
         });
