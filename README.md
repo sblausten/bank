@@ -1,4 +1,4 @@
-## Bank logic
+## Bank app
 
 Basic bank logic built with node that allows you to add, withdraw money and view a statement (in terminal).
 
@@ -13,3 +13,15 @@ myBank.deposit(0, 500);
 myBank.withraw(0, 200);
 myBank.printStatement(0);
 ```
+## To test:
+
+```bash
+npm install
+grunt test
+```
+
+## What I learnt
+
+- How to use and configure Grunt and why it is useful
+- 
+

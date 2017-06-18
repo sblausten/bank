@@ -2,10 +2,9 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 	    jshint: {
-	      files: ['Gruntfile.js', 'src/**/*.js', 'spec/**/*.js'],
+	      files: ['Gruntfile.js', 'src/*.js', 'spec/**/*.js'],
 	      options: {
 	        globals: {
-	          jQuery: true
 	        }
 	      }
 	    },
@@ -22,7 +21,7 @@ module.exports = function(grunt) {
 		      specNameMatcher: 'spec'
 		    },
 		    all: ['spec/']
-		  }
+		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-jshint');

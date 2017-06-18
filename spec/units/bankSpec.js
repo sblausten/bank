@@ -9,12 +9,11 @@ describe('bank', function() {
         beforeEach(function() {
             bank = new Bank();
             accountStub = jasmine.createSpy('Account');
-            Account({});
         });
 
         xit('creates new account', function() {
             bank.createAccount();
-            expect(Account).toHaveBeenCalledWith(0);
+            expect(accountStub).toHaveBeenCalledWith(0);
         });
     });
 });
